@@ -1,0 +1,36 @@
+---
+// IMPORT LAYOUT
+import Container from "@/layouts/Container.astro"
+
+import { Icon } from "astro-icon/components"
+
+import HeadingOneBlack from "@/atoms/headings/h1-black/index.astro"
+import HeadingTwoBlack from "@/atoms/headings/h2-black/index.astro"
+import ParagraphBlackCenter from "@/atoms/paragraphs/black/center.astro"
+---
+<section class="py-10 bg-white">
+    <Container>
+        <div class="flex flex-col items-center w-full gap-4">
+            <HeadingOneBlack>Industries we serve</HeadingOneBlack>
+            <section class="grid gap-4 w-full">
+            {
+
+                Array(6).fill(0).map( ( value ) => {
+
+                    return (
+                        <div class="shadow p-6 rounded grid gap-4">
+                            <div class="flex justify-center">
+                                <Icon name="graduation-cap" class="size-12 text-modifyed_yellow"/>
+                            </div>
+                            <HeadingTwoBlack>Education</HeadingTwoBlack>
+                            <ParagraphBlackCenter>Modifyed Digital offers educational institutions like schools, colleges, coaching centres, universities, and...</ParagraphBlackCenter>
+                        </div>
+                    )
+
+                })
+
+            }
+            </section>
+        </div>
+    <Container>
+</section>
