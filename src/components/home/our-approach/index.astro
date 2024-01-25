@@ -1,0 +1,35 @@
+---
+// IMPORT LAYOUT
+import Container from "@/layouts/Container.astro"
+
+import { Icon } from "astro-icon/components"
+
+import HeadingOneWhite from "@/atoms/headings/h1-white/index.astro"
+import ParagraphWhiteCenter from "@/atoms/paragraphs/white/center.astro"
+import ButtonSecondaryFull from "@/atoms/button/secondary/full.astro"
+import InputText from "@/atoms/input/text/index.astro"
+---
+<section class="py-10 bg-black">
+    <Container>
+        <div class="flex flex-col items-center w-full gap-4">
+            <HeadingOneWhite>Our Approach</HeadingOneWhite>
+            <ParagraphWhiteCenter>It has taken us years of toil and experience to structure our approach to guarantee a seamless experience for you. Fortunately, we cracked the code with the support of some highly stimulating clients. So, these are the things that are critically important to us:</ParagraphWhiteCenter>
+            <section class="grid gap-4">
+            {
+
+                Array(4).fill(0).map( ( value ) => {
+
+                    return (
+                        <div class="gap-2 flex items-center">
+                            <Icon name="check" class="size-6 text-modifyed_yellow"/>
+                            <ParagraphWhiteCenter>STRATEGY</ParagraphWhiteCenter>
+                        </div>
+                    )
+
+                })
+
+            }
+            </section>
+        </div>
+    <Container>
+</section>
