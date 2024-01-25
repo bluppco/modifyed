@@ -36,8 +36,9 @@ module.exports = {
         "futura_pt_condensed": ["futura-pt-condensed", "sans-serif"]
       },
       colors: {
-        "modifyed_yellow": "#3a3a3a",
-        "modifyed_yellow": "#fcbb01"
+        "modifyed_grey": "#3a3a3a",
+        "modifyed_yellow": "#fcbb01",
+        "modifyed_primary_grey": "#242b34"
       }
     },
   },
