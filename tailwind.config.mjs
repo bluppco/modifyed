@@ -5,7 +5,7 @@ module.exports = {
     './pages/**/*.{js,jsx}',
     './components/**/*.{js,jsx}',
     './app/**/*.{js,jsx}',
-    './src/**/*.{js,jsx}',
+    './src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}',
   ],
   prefix: "",
   theme: {
@@ -31,6 +31,14 @@ module.exports = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
+      fontFamily: {
+        "roboto": ["Roboto", "sans-serif"],
+        "futura_pt_condensed": ["futura-pt-condensed", "sans-serif"]
+      },
+      colors: {
+        "modifyed_yellow": "#3a3a3a",
+        "modifyed_yellow": "#fcbb01"
+      }
     },
   },
   plugins: [require("tailwindcss-animate")],
