@@ -1,0 +1,36 @@
+---
+// IMPORT LAYOUT
+import Container from "@/layouts/Container.astro"
+
+import { Icon } from "astro-icon/components"
+
+import HeadingOneWhite from "@/atoms/headings/h1-white/index.astro"
+import ParagraphWhiteCenter from "@/atoms/paragraphs/white/center.astro"
+import ButtonSecondaryFull from "@/atoms/button/secondary/full.astro"
+import InputText from "@/atoms/input/text/index.astro"
+import HeadingTwoWhite from "@/atoms/headings/h2-white/index.astro"
+---
+<section class="py-10 bg-black">
+    <Container>
+        <div class="flex flex-col items-center w-full gap-4">
+            <HeadingOneWhite>Things we can do for you</HeadingOneWhite>
+            <section class="grid gap-4 grid-cols-2 w-full">
+            {
+
+                Array(9).fill(0).map( ( value ) => {
+
+                    return (
+                        <div class="gap-2 grid">
+                            <div class="w-full aspect-square bg-zinc-200"></div>
+                            <HeadingTwoWhite>Digital Marketing</HeadingTwoWhite>
+                            <p class="text-modifyed_yellow text-center underline uppercase">Know More</p>
+                        </div>
+                    )
+
+                })
+
+            }
+            </section>
+        </div>
+    <Container>
+</section>
