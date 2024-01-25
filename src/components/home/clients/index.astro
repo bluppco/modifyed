@@ -1,0 +1,29 @@
+---
+// IMPORT LAYOUT
+import Container from "@/layouts/Container.astro"
+
+import HeadingOneBlack from "@/atoms/headings/h1-black/index.astro"
+import ParagraphBlack from "@/atoms/paragraphs/black/index.astro"
+import Button from "@/atoms/button/primary/index.astro"
+---
+<section class="py-10">
+    <Container>
+        <div class="flex flex-col items-center w-full gap-4">
+            <HeadingOneBlack>Clients we work with</HeadingOneBlack>
+            <div class="grid grid-cols-2 gap-4 w-full">
+            {
+
+                Array(12).fill(0).map( ( value ) => {
+
+                    return (
+                        <div class="bg-zinc-200 w-full aspect-video" />
+                    )
+
+                })
+
+            }
+            </div>
+            <Button>See Our Work</Button>
+        </div>
+    <Container>
+</section>
