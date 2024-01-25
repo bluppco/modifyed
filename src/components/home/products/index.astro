@@ -1,0 +1,34 @@
+---
+// IMPORT LAYOUT
+import Container from "@/layouts/Container.astro"
+
+import HeadingOneBlack from "@/atoms/headings/h1-black/index.astro"
+import ParagraphBlack from "@/atoms/paragraphs/black/index.astro"
+import ButtonSecondaryFull from "@/atoms/button/secondary/full.astro"
+import InputText from "@/atoms/input/text/index.astro"
+---
+<section class="py-10">
+    <Container>
+        <div class="flex flex-col items-center w-full gap-4">
+            <HeadingOneBlack>Our Products</HeadingOneBlack>
+            <ParagraphBlack>Along with strategic consulting and customised digital services, we also offer bundled products to help you get world-class services at a predictable, affordable price. Get the best digital services, minus the headache!</ParagraphBlack>
+            <section class="grid grid-cols-2 gap-4">
+            {
+
+                Array(6).fill(0).map( ( value ) => {
+
+                    return (
+                        <div class="grid gap-2">
+                            <div class="w-full bg-zinc-200 aspect-[2/1]"/>
+                            <ParagraphBlack>SEO is simple. Don't let anyone confuse you. Guaranteed rankings on Google, or get your money back!</ParagraphBlack>
+                            <p class="uppercase font-futura_pt_condensed underline text-lg text-modifyed_yellow">Know More</p>
+                        </div>
+                    )
+
+                })
+
+            }
+            </section>
+        </div>
+    <Container>
+</section>
